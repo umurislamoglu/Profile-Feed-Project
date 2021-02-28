@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="profile">
+          <div class="profilepic">
+            <div class="imgbox">
+              <img
+                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="profilename">
+            <h3>Jason Jasonson</h3>
+          </div>
+          <div class="info">
+            <div class="infoheader">
+              <h3>General</h3>
+            </div>
+            <br />
+            <div class="infodetail">
+              <p><span>Company:</span> <br />JasonCorp</p>
+              <br />
+              <p><span>Department:</span> <br />Jason Management</p>
+              <br />
+              <p><span>Education:</span> <br />Jason University</p>
+              <br />
+              <p><span>Birth Day:</span> <br />00.00.0000</p>
+              <br />
+              <p><span>Email:</span> <br />jason@jasoncorp.com</p>
+              <br />
+            </div>
+          </div>
+          <div class="profilefooter">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-github-square"></i></a>
+          </div>
+        </div>
+        <div class="feed">
+          <ul class="stories">
+            <li class="article">
+              <div class="articleHeader">
+                <h4>Article</h4>
+                <i class="fas fa-trash-alt"></i>
+              </div>
+              <div class="articleBody">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur illum deleniti, officiis eum nulla fugit omnis!
+                  Assumenda excepturi quia est? <small>More</small>
+                </p>
+              </div>
+            </li>
+            <li class="article">
+              <div class="articleHeader">
+                <h4>Article</h4>
+                <i class="fas fa-trash-alt"></i>
+              </div>
+              <div class="articleBody">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aspernatur illum deleniti, officiis eum nulla fugit omnis!
+                  Assumenda excepturi quia est? <small>More</small>
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="addArticle">
+            <p>Click to add Article</p>
+            <button class="btn"><i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="megaprofilepic">
+      <img
+        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt=""
+      />
+    </div>
+    <div id="overlay">
+      <div id="overlay-background"></div>
+      <div class="createArticle" id="createArticleDiv">
+        <form id="articleForm">
+          <label for="articleHeader">Header:</label> <br />
+          <input type="text" name="articleHeader" id="header" required /> <br />
+          <label for="articleBody">Body:</label> <br />
+          <textarea
+            name="articleBody"
+            id="body"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <br />
+          <button class="btn" id="submit">Create Article</button>
+          <button class="btn" id="quit">Quit</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
